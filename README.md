@@ -150,7 +150,7 @@ Your task is to create a simplified version of card game "BANG" as a **console**
 
 ## Introduction to the game
 
-The players are in the wild west, and since this is a simplified version of the game, they all fight against each other. In our simplified version of the game, we have neither characters nor weapons and also we don't have many other cards from the original game.
+The players are in the wild west, and since this is a simplified version of the game, they all fight against each other. In our simplified version of the game, we have neither characters nor weapons and also we don't have many other sk.stuba.fei.uim.oop.cards from the original game.
 
 ## Goal of the game
 
@@ -158,19 +158,19 @@ Be the last one alive.
 
 ## Cards
 
-In our version of the game, there are two types of cards, **Blue** and **Brown** cards.
+In our version of the game, there are two types of sk.stuba.fei.uim.oop.cards, **Blue** and **Brown** sk.stuba.fei.uim.oop.cards.
 
-#### Blue cards
+#### Blue sk.stuba.fei.uim.oop.cards
 
-After playing blue card, blue card lie in front of the player, and their effect is permanent until they are removed.
+After playing blue card, blue card lie in front of the sk.stuba.fei.uim.oop.player, and their effect is permanent until they are removed.
 
 * 2x Barrel
 * 1x Dynamite
 * 3x Prison
 
-#### Brown cards
+#### Brown sk.stuba.fei.uim.oop.cards
 
-Brown cards have an immediate effect and are immediately discarded into the discard pile after being played.
+Brown sk.stuba.fei.uim.oop.cards have an immediate effect and are immediately discarded into the discard pile after being played.
 
 * 30x Bang
 * 15x Missed
@@ -183,24 +183,24 @@ The effects of each card are described below.
 
 ## Game preparation
 
-The game can be played by 2-4 players. Each player starts with 4 cards from the deck and starts with 4 lives. The upper number of lives is not limited.
+The game can be played by 2-4 players. Each sk.stuba.fei.uim.oop.player starts with 4 sk.stuba.fei.uim.oop.cards from the deck and starts with 4 lives. The upper number of lives is not limited.
 
 ## The course of the game
 
-Players play sequentially in a row. Each player's turn is divided into 3 parts:
-* 1. Drawing cards - at the beginning of his turn, the given player draws 2 cards from the deck. If he has blue cards (Prison, Dynamite) in front of him, their effect is excecuted as first.
-* 2. Playing cards - the player can play any number of cards during his turn, but he does not have to play any. During the move, however, the rule must be fulfilled that only one copy of each card can lie in front of the player (Example: If you already have a Barrel in front of you, you cannot place another one in front of you).
-* 3. Discarding excess cards - a player can only have as many cards in his hand as he has lives at the end of his turn.
+Players play sequentially in a row. Each sk.stuba.fei.uim.oop.player's turn is divided into 3 parts:
+* 1. Drawing sk.stuba.fei.uim.oop.cards - at the beginning of his turn, the given sk.stuba.fei.uim.oop.player draws 2 sk.stuba.fei.uim.oop.cards from the deck. If he has blue sk.stuba.fei.uim.oop.cards (Prison, Dynamite) in front of him, their effect is excecuted as first.
+* 2. Playing sk.stuba.fei.uim.oop.cards - the sk.stuba.fei.uim.oop.player can play any number of sk.stuba.fei.uim.oop.cards during his turn, but he does not have to play any. During the move, however, the rule must be fulfilled that only one copy of each card can lie in front of the sk.stuba.fei.uim.oop.player (Example: If you already have a Barrel in front of you, you cannot place another one in front of you).
+* 3. Discarding excess sk.stuba.fei.uim.oop.cards - a sk.stuba.fei.uim.oop.player can only have as many sk.stuba.fei.uim.oop.cards in his hand as he has lives at the end of his turn.
 
 ## Killing an opponent
 
-If any of the players die, they must return all the cards from their hand and from the table in front of them and put them in the discard pile. If a player is killed by another player, you can come up with a reward for the player who did kill (For example, he draws 2 cards, this task is optional).
+If any of the players die, they must return all the sk.stuba.fei.uim.oop.cards from their hand and from the table in front of them and put them in the discard pile. If a sk.stuba.fei.uim.oop.player is killed by another sk.stuba.fei.uim.oop.player, you can come up with a reward for the sk.stuba.fei.uim.oop.player who did kill (For example, he draws 2 sk.stuba.fei.uim.oop.cards, this task is optional).
 
-## Explanation of individual cards
+## Explanation of individual sk.stuba.fei.uim.oop.cards
 
 #### Bang and Missed
 
-Bang cards are the main way to reduce the health of your opponents. In our simplified version of the game, you can play an unlimited number of these cards during your turn.
+Bang sk.stuba.fei.uim.oop.cards are the main way to reduce the health of your opponents. In our simplified version of the game, you can play an unlimited number of these sk.stuba.fei.uim.oop.cards during your turn.
 
 If you are a target of a Bang card, you can immediately play a card Missed to discard the effect of the Bang card, if you don't have one, you lose a life. If you lose all lives, you are out of the game.
 
@@ -214,31 +214,31 @@ Example move: Some of the players shoot a BANG card at you, and you have a Barre
 
 #### Beer
 
-The beer card allows the player to add one life. The effect of the card can only be applied to the currently playing player.
+The beer card allows the sk.stuba.fei.uim.oop.player to add one life. The effect of the card can only be applied to the currently playing sk.stuba.fei.uim.oop.player.
 
 #### Stagecoach
 
-Using the stagecoach card, the player can draw two cards from the deck.
+Using the stagecoach card, the sk.stuba.fei.uim.oop.player can draw two sk.stuba.fei.uim.oop.cards from the deck.
 
 #### Indians
 
-By playing the Indians card, you cause an Indian attack on all players (except the player who played it). Each player must use a *Bang* card or lose one life.
+By playing the Indians card, you cause an Indian attack on all players (except the sk.stuba.fei.uim.oop.player who played it). Each sk.stuba.fei.uim.oop.player must use a *Bang* card or lose one life.
 
 #### Cat Balou
 
 By playing this card, you can discard a card of your opponent, either from the table or from your hand.
 
-Example of playing a card: Player A plays the Cat Balou card to Player B, the game offers him whether he wants to discard a card from his hand or from the table, and after the given choice, a randomly selected card is automatically discarded from Player B. If Player B has no cards, Player A will be shown a message that he cannot currently play this card on that player.
+Example of playing a card: Player A plays the Cat Balou card to Player B, the game offers him whether he wants to discard a card from his hand or from the table, and after the given choice, a randomly selected card is automatically discarded from Player B. If Player B has no sk.stuba.fei.uim.oop.cards, Player A will be shown a message that he cannot currently play this card on that sk.stuba.fei.uim.oop.player.
 
 #### Prison
 
-You put this card in front of any player, and you will trap him with this card. If a player has a Prison card in front of him before the start of his turn, he must check its effect to see if he manages to escape from it or not. The chance of escaping from prison is 1 in 4. If he fails to escape from prison, he skips the turn, if he does, he continues his turn. In both cases, the card is discarded into the discard pile after checking its effect.
+You put this card in front of any sk.stuba.fei.uim.oop.player, and you will trap him with this card. If a sk.stuba.fei.uim.oop.player has a Prison card in front of him before the start of his turn, he must check its effect to see if he manages to escape from it or not. The chance of escaping from prison is 1 in 4. If he fails to escape from prison, he skips the turn, if he does, he continues his turn. In both cases, the card is discarded into the discard pile after checking its effect.
 
 #### Dynamite
 
-You place this card in front of you when you play it. The effect of the Dynamite card is always checked at the beginning of the turn, if the dynamite explodes in front of you, you lose 3 life and the card is discarded into the deck. Unless your dynamite explodes, the card moves to the player who played before you (Dynamite moves in the opposite direction of the game). The dynamite has a 1 in 8 chance of exploding.
+You place this card in front of you when you play it. The effect of the Dynamite card is always checked at the beginning of the turn, if the dynamite explodes in front of you, you lose 3 life and the card is discarded into the deck. Unless your dynamite explodes, the card moves to the sk.stuba.fei.uim.oop.player who played before you (Dynamite moves in the opposite direction of the game). The dynamite has a 1 in 8 chance of exploding.
 
-If the situation should arise that the player has both a Prison and Dynamite card in front of him at the beginning of the round, the effect of the Dynamite card is checked first and only then the Prison card.
+If the situation should arise that the sk.stuba.fei.uim.oop.player has both a Prison and Dynamite card in front of him at the beginning of the round, the effect of the Dynamite card is checked first and only then the Prison card.
 
 ## Evaluation
 You can get 10 points for this assignment. 5 points are given for fulfilling the outlined rules of the game, 5 points are given for complying with OOP principles. **The program must be able to compile, otherwise 0 points are given for the assigment**.
