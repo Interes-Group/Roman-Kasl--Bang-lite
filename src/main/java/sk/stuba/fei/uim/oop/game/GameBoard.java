@@ -2,14 +2,15 @@ package sk.stuba.fei.uim.oop.game;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Random;
 
 import sk.stuba.fei.uim.oop.cards.Card;
 import sk.stuba.fei.uim.oop.cards.blue.*;
 import sk.stuba.fei.uim.oop.cards.brown.*;
-
 import sk.stuba.fei.uim.oop.utility.KeyboardInput;
 
 public class GameBoard {
+    private static Random rand = new Random();
     private ArrayList<Player> players = new ArrayList<>();
 
     private ArrayList<Card> deck = new ArrayList<>();
@@ -22,36 +23,33 @@ public class GameBoard {
 
     private void fillDeck() {
         for (int i = 0; i < 2; i++) {
-            deck.add(new Barrel());
+            deck.add(new Barrel("Barrel", this));
         }
         for (int i = 0; i < 1; i++) {
-            deck.add(new Dynamite());
+            deck.add(new Dynamite("Dynamite", this));
         }
         for (int i = 0; i < 3; i++) {
-            deck.add(new Prison());
+            deck.add(new Prison("Prison", this));
         }
         for (int i = 0; i < 30; i++) {
-            deck.add(new Bang());
+            deck.add(new Bang("Bang", this));
         }
         for (int i = 0; i < 15; i++) {
-            deck.add(new Missed());
+            deck.add(new Missed("Missed", this));
         }
         for (int i = 0; i < 8; i++) {
-            deck.add(new Beer());
+            deck.add(new Beer("Beer", this));
         }
         for (int i = 0; i < 6; i++) {
-            deck.add(new CatBalou());
+            deck.add(new CatBalou("CatBalou", this));
         }
         for (int i = 0; i < 4; i++) {
-            deck.add(new Stagecoach());
+            deck.add(new Stagecoach("Stagecoach", this));
         }
         for (int i = 0; i < 2; i++) {
-            deck.add(new Indians());
+            deck.add(new Indians("Indians", this));
         }
         Collections.shuffle(deck);
-        for (Card card : deck) {
-            card.setGameBoard(this);
-        }
     }
 
 
@@ -67,6 +65,10 @@ public class GameBoard {
         }
     }
 
+    public ArrayList<Player> getPlayers() {
+        return this.players;
+    }
+
     public Card drawCard() {
         if (deck.isEmpty()) {
             while (!discardPile.isEmpty()) {
@@ -79,5 +81,9 @@ public class GameBoard {
 
     public void discardCard(Card card) {
         discardPile.add(card);
+    }
+
+    public int randInt(int bound) {
+        return rand.nextInt(bound);
     }
 }
