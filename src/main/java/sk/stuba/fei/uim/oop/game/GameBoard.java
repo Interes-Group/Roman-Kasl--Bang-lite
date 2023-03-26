@@ -12,6 +12,7 @@ import sk.stuba.fei.uim.oop.utility.KeyboardInput;
 public class GameBoard {
     private static Random rand = new Random();
     private ArrayList<Player> players = new ArrayList<>();
+    private ArrayList<Player> deadPlayers = new ArrayList<>();
 
     private ArrayList<Card> deck = new ArrayList<>();
     private ArrayList<Card> discardPile = new ArrayList<>();
@@ -66,7 +67,11 @@ public class GameBoard {
     }
 
     public ArrayList<Player> getPlayers() {
-        return this.players;
+        return players;
+    }
+
+    public ArrayList<Player> getDeadPlayers() {
+        return deadPlayers;
     }
 
     public Card drawCard() {
@@ -85,5 +90,12 @@ public class GameBoard {
 
     public int randInt(int bound) {
         return rand.nextInt(bound);
+    }
+
+    public void playerDied(Player player) {
+        player.discardAllCards();
+        deadPlayers.add(player);
+        players.remove(player);
+        System.out.println(player.getName() + " has died!");
     }
 }

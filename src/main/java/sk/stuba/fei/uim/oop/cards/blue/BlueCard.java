@@ -13,4 +13,6 @@ public class BlueCard extends Card {
     protected void placeInfrontOf(Player target) {
         target.getLaidCards().add(this);
     }
+
+
 }

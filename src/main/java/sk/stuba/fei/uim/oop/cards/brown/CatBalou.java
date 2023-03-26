@@ -55,8 +55,8 @@ public class CatBalou extends BrownCard {
     }
 
     private void rmFromLaidCards(Player target) {
-        System.out.println("You discarted a card from cards laid in front of" + target.getName() + ".");
-        Card card = target.getHand().remove(gameBoard.randInt(target.getHand().size()));
+        System.out.println("You discarted a card from cards laid in front of " + target.getName() + ".");
+        Card card = target.getLaidCards().remove(gameBoard.randInt(target.getHand().size()));
         gameBoard.discardCard(card);
     }
 }

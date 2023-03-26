@@ -48,6 +48,12 @@ public class Player {
         return laidCards;
     }
 
+    public void printHand() {
+        for (Card card : hand) {
+            System.out.println((hand.indexOf(card)+1) + ". " + card.getName());
+        }
+    }
+
     public void discardAllCards() {
         while (!hand.isEmpty()) {
             gameBoard.discardCard(hand.remove(0));

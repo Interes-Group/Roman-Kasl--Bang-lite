@@ -11,12 +11,14 @@ public class Missed extends BrownCard {
 
     @Override
     public boolean canBePlayed(Player playing) {
+        System.out.println("You can only play this to block Bang!");
         return false;
     }
 
     @Override
     public void play(Player playing) {
-        super.play(playing);
+        playing.getHand().remove(this);
+        gameBoard.discardCard(this);
         System.out.println(playing.getName() + " uses Missed card!");
     }
 }

@@ -32,8 +32,23 @@ public class Prison extends BlueCard {
         super.placeInfrontOf(target);
     }
 
+    public boolean effect(Player player) {
+        boolean bool;
+        if (Math.random() < 0.25) {
+            System.out.println("You escape from the prison!");
+            bool = true;
+        }
+        else {
+            System.out.println("You couldn't escape from the prison!");
+            bool = false;
+        }
+        gameBoard.discardCard(this);
+        player.getLaidCards().remove(this);
+        return bool;
+    }
+
     private boolean isInPrison(Player player) {
-        for (Card card : player.getHand()) {
+        for (Card card : player.getLaidCards()) {
             if (card instanceof Prison) {
                 return true;
             }

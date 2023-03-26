@@ -1,9 +1,8 @@
 package sk.stuba.fei.uim.oop.cards;
 
-import sk.stuba.fei.uim.oop.game.GameBoard;
-
 import java.util.ArrayList;
 
+import sk.stuba.fei.uim.oop.game.GameBoard;
 import sk.stuba.fei.uim.oop.game.Player;
 import sk.stuba.fei.uim.oop.utility.KeyboardInput;
 
@@ -14,6 +13,10 @@ public class Card {
     public Card(String name, GameBoard gameBoard) {
         this.name = name;
         this.gameBoard = gameBoard;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public boolean canBePlayed(Player playing) {
@@ -31,6 +34,7 @@ public class Card {
             System.out.println(players.indexOf(player)+1 + ". " + player.getName());
         }
         int playerIndex = KeyboardInput.readInt("Who do you choose to play this card on? ");
+        --playerIndex;
         while (playerIndex < 0 || playerIndex >= players.size() || players.get(playerIndex) == playing) {
             if (playerIndex < 0 || playerIndex >= players.size()) {
                 playerIndex = KeyboardInput.readInt("Invalid player number! Enter again: ");
@@ -40,7 +44,7 @@ public class Card {
             }
             --playerIndex;
         }
+        System.out.println();
         return players.get(playerIndex);
     }
 }
-
